@@ -1,0 +1,36 @@
+{
+  "day": "Sunday",
+  "owner": "Student 7",
+  "lectures": [
+    {
+      "time": "09:00",
+      "roomNumber": 207,
+      "titleLecture": "Monitoring"
+    },
+    {
+      "time": "11:00",
+      "roomNumber": 207,
+      "titleLecture": "Logs & Metrics"
+    },
+    {
+      "time": "14:00",
+      "roomNumber": 207,
+      "titleLecture": "Review"
+    }
+  ],
+  "status": "Scheduled",
+  "labStatus": {
+    "timeChange": {
+      "status": "pending",
+      "note": "Waiting for Day 1"
+    },
+    "jsonRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 2"
+    },
+    "schemaRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 3"
+    }
+  }
+}

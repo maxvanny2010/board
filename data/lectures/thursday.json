@@ -1,0 +1,36 @@
+{
+  "day": "Thursday",
+  "owner": "Student 4",
+  "lectures": [
+    {
+      "time": "09:00",
+      "roomNumber": 204,
+      "titleLecture": "AWS Intro"
+    },
+    {
+      "time": "11:00",
+      "roomNumber": 204,
+      "titleLecture": "EC2 Basics"
+    },
+    {
+      "time": "14:00",
+      "roomNumber": 204,
+      "titleLecture": "IAM Basics"
+    }
+  ],
+  "status": "Scheduled",
+  "labStatus": {
+    "timeChange": {
+      "status": "pending",
+      "note": "Waiting for Day 1"
+    },
+    "jsonRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 2"
+    },
+    "schemaRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 3"
+    }
+  }
+}

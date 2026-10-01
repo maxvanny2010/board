@@ -1,0 +1,36 @@
+{
+  "day": "Tuesday",
+  "owner": "Student 2",
+  "lectures": [
+    {
+      "time": "09:00",
+      "roomNumber": 202,
+      "titleLecture": "Linux Basics"
+    },
+    {
+      "time": "11:00",
+      "roomNumber": 202,
+      "titleLecture": "Permissions"
+    },
+    {
+      "time": "14:00",
+      "roomNumber": 202,
+      "titleLecture": "Bash Practice"
+    }
+  ],
+  "status": "Scheduled",
+  "labStatus": {
+    "timeChange": {
+      "status": "pending",
+      "note": "Waiting for Day 1"
+    },
+    "jsonRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 2"
+    },
+    "schemaRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 3"
+    }
+  }
+}

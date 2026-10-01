@@ -1,0 +1,36 @@
+{
+  "day": "Friday",
+  "owner": "Student 5",
+  "lectures": [
+    {
+      "time": "09:00",
+      "roomNumber": 205,
+      "titleLecture": "CI Basics"
+    },
+    {
+      "time": "11:00",
+      "roomNumber": 205,
+      "titleLecture": "GitHub Actions"
+    },
+    {
+      "time": "14:00",
+      "roomNumber": 205,
+      "titleLecture": "Quality Gates"
+    }
+  ],
+  "status": "Scheduled",
+  "labStatus": {
+    "timeChange": {
+      "status": "pending",
+      "note": "Waiting for Day 1"
+    },
+    "jsonRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 2"
+    },
+    "schemaRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 3"
+    }
+  }
+}

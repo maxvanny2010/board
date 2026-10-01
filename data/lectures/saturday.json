@@ -1,0 +1,36 @@
+{
+  "day": "Saturday",
+  "owner": "Student 6",
+  "lectures": [
+    {
+      "time": "09:00",
+      "roomNumber": 206,
+      "titleLecture": "IaC Intro"
+    },
+    {
+      "time": "11:00",
+      "roomNumber": 206,
+      "titleLecture": "CloudFormation"
+    },
+    {
+      "time": "14:00",
+      "roomNumber": 206,
+      "titleLecture": "Terraform Basics"
+    }
+  ],
+  "status": "Scheduled",
+  "labStatus": {
+    "timeChange": {
+      "status": "pending",
+      "note": "Waiting for Day 1"
+    },
+    "jsonRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 2"
+    },
+    "schemaRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 3"
+    }
+  }
+}

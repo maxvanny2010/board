@@ -1,0 +1,495 @@
+:root {
+    --bg: #000000;
+    --panel: #0b0d10;
+    --panel-2: #111419;
+    --row: #080a0d;
+    --line: #272c33;
+    --line-soft: #1d2228;
+    --text: #f2f0eb;
+    --muted: #a5adb8;
+    --muted-2: #747d88;
+    --accent: #72b8d6;
+    --amber: #e2bd62;
+    --green: #7bc78f;
+    --green-bg: #0f1d13;
+    --radius: 5px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+    overflow: hidden
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:64px 1fr 34px;
+    background: #000;
+}
+
+/* header */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    border-bottom: 1px solid var(--line);
+    background: #050607;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #37424e;
+    border-radius: 4px;
+    color: var(--accent);
+    background: #0a0d11;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.eyebrow {
+    margin-bottom: 2px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .11em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.1;
+}
+
+.header-meta {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* main */
+
+.content {
+    min-height: 0;
+    padding: 16px 28px 14px;
+    display: grid;
+    grid-template-rows:auto auto auto;
+    align-content: start;
+    gap: 18px;
+}
+
+.board-head {
+    display: grid;
+    grid-template-columns:1fr 360px;
+    gap: 28px;
+    align-items: end;
+    padding: 2px 0 4px;
+}
+
+.section-kicker {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.board-head h2 {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.02em;
+}
+
+.board-head p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+/* seven cards in one row */
+
+.lecture-grid {
+    display: grid;
+    grid-template-columns:repeat(7, minmax(0, 1fr));
+    gap: 10px;
+    align-items: stretch;
+}
+
+.day-card,
+.day-card:nth-child(5),
+.day-card:nth-child(6),
+.day-card:nth-child(7) {
+    grid-column: auto;
+}
+
+.day-card {
+    min-width: 0;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px 11px;
+}
+
+.day-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--line);
+}
+
+.day-name {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.owner {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.state-text {
+    color: var(--muted-2);
+    font-size: 8px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+/* lectures */
+
+.lecture-list {
+    display: grid;
+    gap: 6px;
+    padding-top: 10px;
+}
+
+.lecture-row {
+    display: grid;
+    grid-template-columns:55px 70px minmax(0, 1fr);
+    gap: 8px;
+    align-items: center;
+    min-height: 39px;
+    padding: 0 8px;
+    background: var(--row);
+    border: 1px solid var(--line-soft);
+    border-radius: 3px;
+}
+
+.lecture-row .time {
+    color: var(--amber);
+    font-size: 13px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}
+
+.lecture-row .room {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.lecture-row .title {
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.progress-block {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}
+
+.progress-label {
+    margin-bottom: 7px;
+    color: var(--muted-2);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.checks {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 7px;
+}
+
+.check {
+    min-width: 0;
+    min-height: 62px;
+    padding: 9px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+}
+
+.check-top {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #e1e4e7;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.check-dot {
+    width: 9px;
+    height: 9px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #626c78;
+}
+
+.check-note {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.25;
+}
+
+.check.fixed {
+    background: var(--green-bg);
+    border-color: #294533;
+}
+
+.check.fixed .check-dot {
+    background: var(--green);
+}
+
+.check.fixed .check-top {
+    color: #dcecdf;
+}
+
+/* team journey */
+
+.journey-panel {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 11px 14px;
+    background: #0a0d11;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.journey-line {
+    margin-top: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 29px;
+    line-height: 1.05;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.journey-status {
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    border: 1px solid #353b43;
+    border-radius: 4px;
+    background: #090b0e;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .06em;
+}
+
+.journey-status.fixed {
+    color: #dcecdf;
+    background: var(--green-bg);
+    border-color: #294533;
+}
+
+/* footer */
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    border-top: 1px solid var(--line);
+    background: #050607;
+    color: var(--muted-2);
+    font-size: 9px;
+}
+
+.error-box {
+    grid-column: 1/-1;
+    padding: 20px;
+    border: 1px solid #5d3232;
+    background: #1b0f0f;
+    color: #e9bdbd;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 1450px) {
+    body {
+        overflow: auto
+    }
+
+    .page {
+        height: auto
+    }
+
+    .lecture-grid {
+        grid-template-columns:repeat(4, minmax(0, 1fr));
+    }
+
+    .day-card {
+        min-height: 520px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .lecture-grid {
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+
+    .board-head {
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .site-header, .content, .site-footer {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .header-meta {
+        display: none
+    }
+
+    .lecture-grid {
+        grid-template-columns:1fr
+    }
+
+    .day-card {
+        min-height: auto
+    }
+
+    .board-head h2 {
+        font-size: 29px
+    }
+
+    .journey-panel {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .journey-line {
+        font-size: 21px;
+        white-space: normal;
+    }
+
+    .site-footer span:last-child {
+        display: none
+    }
+}
+
+
+@media (max-width: 1700px) {
+    .lecture-row {
+        grid-template-columns: 58px 72px;
+        grid-template-areas:
+      "time room"
+      "title title";
+        row-gap: 5px;
+        padding: 8px 9px;
+        min-height: 58px;
+    }
+
+    .lecture-row .time {
+        grid-area: time;
+    }
+
+    .lecture-row .room {
+        grid-area: room;
+    }
+
+    .lecture-row .title {
+        grid-area: title;
+        font-size: 12px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (min-width: 1701px) {
+    .lecture-row {
+        grid-template-columns: 55px 70px minmax(0, 1fr);
+    }
+}
+
+
+.day-name {
+    font-size: 20px;
+}
+
+.owner {
+    font-size: 15px;
+    font-weight: 800;
+    color: #d7dde4;
+    letter-spacing: .01em;
+    margin-top: 5px;
+}
+
+.journey-stage {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.journey-day {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}

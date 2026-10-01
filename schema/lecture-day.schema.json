@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lecture Day",
+  "type": "object",
+  "required": [
+    "day",
+    "owner",
+    "lectures",
+    "status",
+    "labStatus"
+  ],
+  "properties": {
+    "day": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner": {
+      "type": "string",
+      "pattern": "^Student [1-7]$"
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lectures": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "time",
+          "roomNumber",
+          "titleLecture"
+        ],
+        "properties": {
+          "time": {
+            "type": "string",
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          },
+          "roomNumber": {
+            "type": "integer"
+          },
+          "titleLecture": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "labStatus": {
+      "type": "object",
+      "required": [
+        "timeChange",
+        "jsonRecovery",
+        "schemaRecovery"
+      ],
+      "properties": {
+        "timeChange": {
+          "$ref": "#/$defs/labCheck"
+        },
+        "jsonRecovery": {
+          "$ref": "#/$defs/labCheck"
+        },
+        "schemaRecovery": {
+          "$ref": "#/$defs/labCheck"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "labCheck": {
+      "type": "object",
+      "required": [
+        "status",
+        "note"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "fixed"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

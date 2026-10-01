@@ -1,0 +1,36 @@
+{
+  "day": "Monday",
+  "owner": "Student 1",
+  "lectures": [
+    {
+      "time": "09:00",
+      "roomNumber": 201,
+      "titleLecture": "DevOps Intro"
+    },
+    {
+      "time": "11:00",
+      "roomNumber": 201,
+      "titleLecture": "Git Basics"
+    },
+    {
+      "time": "14:00",
+      "roomNumber": 201,
+      "titleLecture": "Pull Requests"
+    }
+  ],
+  "status": "Scheduled",
+  "labStatus": {
+    "timeChange": {
+      "status": "pending",
+      "note": "Waiting for Day 1"
+    },
+    "jsonRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 2"
+    },
+    "schemaRecovery": {
+      "status": "pending",
+      "note": "Waiting for Day 3"
+    }
+  }
+}
