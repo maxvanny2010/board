@@ -63,8 +63,9 @@ When your assigned task appears in `TO DO`:
 
 1. Open the task and read the full description.
 2. Move it to `IN PROGRESS`.
-3. Use the exact branch name and instructions written in the task.
-4. Follow `GIT-RULES.md`.
+3. Use the exact branch name, commit message and PR title written in the task.
+4. Ignore the auto-generated GitHub suggestions in the right-side ClickUp panel.
+5. Follow `GIT-RULES.md`.
 
 ## Sending work for review
 

@@ -100,6 +100,11 @@ git commit -m "<commit-message>"
 Use the exact commit message written 
 in ClickUp when one is provided.
 
+**Important:** Use only the branch name, commit message 
+and PR title written in your ClickUp task.
+Ignore the auto-generated GitHub suggestions shown 
+in the right-side ClickUp panel.
+
 5. Push your branch:
 
 ```bash
