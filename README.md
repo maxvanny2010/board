@@ -14,8 +14,16 @@ ClickUp → branch → commit → push → Pull Request → CI → review → me
 
 The site is designed for GitHub Pages.
 
-Local preview: use a small static server such as VS Code Live Server. Opening `index.html` directly with `file://` may
-block JSON `fetch()` requests.
+**Local preview:** Local preview is optional.
+You do not need to run the website locally to complete the practical, 
+because the main focus is Git/GitHub, Pull Requests, CI, review and merge conflicts.
+
+If you use VS Code and want to see the website locally, 
+install the **Live Server** extension by **Ritwick Dey**, 
+open the project folder, and click **Go Live** in the bottom-right corner.
+
+The site will open locally in your browser. 
+This is only for previewing small data changes and is not required for the tasks.
 
 ## Student ownership
 
