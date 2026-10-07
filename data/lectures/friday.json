@@ -3,17 +3,17 @@
   "owner": "Student 5",
   "lectures": [
     {
-      "time": "09:00",
+      "time": "10:00",
       "roomNumber": 205,
       "titleLecture": "CI Basics"
     },
     {
-      "time": "11:00",
+      "time": "10:00",
       "roomNumber": 205,
       "titleLecture": "GitHub Actions"
     },
     {
-      "time": "14:00",
+      "time": "10:00",
       "roomNumber": 205,
       "titleLecture": "Quality Gates"
     }
@@ -21,8 +21,8 @@
   "status": "Scheduled",
   "labStatus": {
     "timeChange": {
-      "status": "pending",
-      "note": "Waiting for Day 1"
+      "status": "fixed",
+      "note": "Timesset to 10:00"
     },
     "jsonRecovery": {
       "status": "pending",
