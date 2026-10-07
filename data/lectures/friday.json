@@ -22,7 +22,7 @@
   "labStatus": {
     "timeChange": {
       "status": "fixed",
-      "note": "Timesset to 10:00"
+      "note": "Times set to 10:00"
     },
     "jsonRecovery": {
       "status": "pending",
