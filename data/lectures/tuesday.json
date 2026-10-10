@@ -3,17 +3,17 @@
   "owner": "Student 2",
   "lectures": [
     {
-      "time": "09:00",
+      "time": "10:00",
       "roomNumber": 202,
       "titleLecture": "Linux Basics"
     },
     {
-      "time": "11:00",
+      "time": "10:00",
       "roomNumber": 202,
       "titleLecture": "Permissions"
     },
     {
-      "time": "14:00",
+      "time": "10:00",
       "roomNumber": 202,
       "titleLecture": "Bash Practice"
     }
@@ -21,7 +21,7 @@
   "status": "Scheduled",
   "labStatus": {
     "timeChange": {
-      "status": "pending",
+      "status": "fixed",
       "note": "Waiting for Day 1"
     },
     "jsonRecovery": {
