@@ -4,7 +4,7 @@
   "lectures": [
     {
       "time": "10:00",
-      "roomNumber": 202,
+      "roomNumber": "202",
       "titleLecture": "Linux Basics"
     },
     {
