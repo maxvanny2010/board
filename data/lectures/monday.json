@@ -4,7 +4,7 @@
   "lectures": [
     {
       "time": "09:00",
-      "roomNumber": 201,
+      "roomNumber": "201",
       "titleLecture": "DevOps Intro"
     },
     {
