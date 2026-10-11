@@ -45,8 +45,8 @@ for (const file of files) {
             const check = d.labStatus[key];
             if (!check) errors.push(`${file}: labStatus.${key} is required`);
             else {
-                if (!["pending", "fixed"].includes(check.status)) {
-                    errors.push(`${file}: labStatus.${key}.status must be pending or fixed`);
+                if (!["pending", "fixed", "in_progress"].includes(check.status)) {
+                    errors.push(`${file}: labStatus.${key}.status must be pending or fixed or in_progress`);
                 }
                 if (typeof check.note !== "string" || !check.note.trim()) {
                     errors.push(`${file}: labStatus.${key}.note must be a non-empty string`);
