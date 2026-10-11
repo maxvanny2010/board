@@ -4,7 +4,7 @@
   "lectures": [
     {
       "time": "09:00",
-      "roomNumber": "201",
+      "roomNumber": 201,
       "titleLecture": "DevOps Intro"
     },
     {
@@ -29,8 +29,8 @@
       "note": "Waiting for Day 2"
     },
     "schemaRecovery": {
-      "status": "pending",
-      "note": "Waiting for Day 3"
+      "status": "fixed",
+      "note": "Room number fixed."
     }
   }
 }
