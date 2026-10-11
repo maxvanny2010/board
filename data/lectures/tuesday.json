@@ -4,7 +4,7 @@
   "lectures": [
     {
       "time": "10:00",
-      "roomNumber": "202",
+      "roomNumber": 202,
       "titleLecture": "Linux Basics"
     },
     {
@@ -29,8 +29,8 @@
       "note": "Trailing comma removed"
     },
     "schemaRecovery": {
-      "status": "pending",
-      "note": "Waiting for Day 3"
+      "status": "fixed",
+      "note": "Room number fixed"
     }
   }
 }
