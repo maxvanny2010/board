@@ -30,7 +30,7 @@
     },
     "schemaRecovery": {
       "status": "fixed",
-      "note": "Room number fixed"
+      "note": "Room number fixed."
     }
   }
 }
