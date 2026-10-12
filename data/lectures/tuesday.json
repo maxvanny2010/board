@@ -29,8 +29,8 @@
       "note": "Trailing comma removed"
     },
     "schemaRecovery": {
-      "status": "in_progress",
-      "note": "Integration team is updating Monday room validation requirements."
+      "status": "fixed",
+      "note": "Room number fixed."
     }
   }
 }
